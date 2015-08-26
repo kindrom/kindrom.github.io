@@ -40,6 +40,7 @@ logic ()
     git add README.md
     git add gulpfile.{js,coffee}
     git add src
+    git rm "$0"
     git commit -m "Automatic initial commit. All things set up."
     
     # Synchronize.
@@ -92,5 +93,4 @@ else # Batch.
     logic "$name" "$description" "$username"
 fi
 
-rm "$0"
 exit # In any way.
